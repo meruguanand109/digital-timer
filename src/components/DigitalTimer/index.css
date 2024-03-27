@@ -1,0 +1,179 @@
+/* Write your CSS here */
+.container {
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #ffffff, #cffcf1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 70px;
+}
+.heading {
+  color: #1e293b;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
+.card {
+  display: flex;
+  width: 90vw;
+  height: 50vw;
+}
+.clock-container {
+  width: 60%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.clock-controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+.clock {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 0px solid;
+  border-radius: 80px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 4px 16px 0p #bfbfbf;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  font-size: 36px;
+  color: #00d9f5;
+  margin: 0px;
+}
+.time-status {
+  font-size: 24px;
+  margin: 0px;
+  color: #1e293b;
+  font-weight: 700;
+}
+.clock-controls-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+}
+.clock-controls {
+  display: flex;
+  align-items: center;
+}
+.control-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.clock-btn {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 160px;
+  display: flex;
+  align-items: center;
+}
+.start {
+  font-size: 34px;
+  font-weight: 500;
+  color: #0f172a;
+  margin-right: 40px;
+  border: 0px;
+  background-color: transparent;
+  margin: 0px;
+  cursor: pointer;
+}
+.control-p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.set-btn {
+  width: 85px;
+  height: 45px;
+  font-size: 32px;
+  font-weight: 500;
+  border: 0px solid;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, #00d9f5, #00d9f5);
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+.decrement {
+  border: 0px;
+  background-color: transparent;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+  .heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .start {
+    font-size: 16px;
+  }
+  .icons {
+    width: 17px;
+    height: 17px;
+    margin: 0px;
+  }
+  .decrement {
+    font-size: 24px;
+    margin: 0px;
+    cursor: pointer;
+  }
+  .clock {
+    width: 80px;
+    height: 80px;
+  }
+  .set-btn {
+    font-size: 16px;
+    width: 60px;
+    height: 30px;
+    padding-top: 5px;
+    margin: 0px;
+  }
+  .time {
+    font-size: 20px;
+  }
+  .time-status {
+    font-size: 13px;
+  }
+  .control-p {
+    font-size: 12px;
+  }
+  .clock-controls-container {
+    width: 45%;
+    padding-left: 10px;
+  }
+  .clock-container {
+    width: 50%;
+  }
+  .clock-btn {
+    width: 65px;
+  }
+}
